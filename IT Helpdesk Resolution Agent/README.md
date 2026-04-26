@@ -87,24 +87,24 @@ graph TD
 
 ---
 
-## Docker Setup
+## Docker Compose Setup (Recommended)
 
-You can run the application fully containerized. A volume mount is recommended during development so the container instantly sees new KB articles.
+This project uses Docker Compose to run both the FastAPI backend and the Streamlit UI simultaneously.
 
-1. **Build the image:**
+1. **Build and start the stack:**
    ```bash
-   docker build -t it-helpdesk-agent .
+   docker compose up -d --build
    ```
 
-2. **Run the container:**
+2. **Access the Streamlit UI:**
+   Open your browser and navigate to: [http://localhost:8501](http://localhost:8501)
+
+3. **Access the Backend API Docs:**
+   Open your browser and navigate to: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+4. **Stop the stack:**
    ```bash
-   # Note: Port 8080 is mapped to the internal 8000 port
-   docker run -d --rm \
-     -p 8080:8000 \
-     -v "$(pwd):/app" \
-     --env-file .env \
-     --name helpdesk-agent \
-     it-helpdesk-agent
+   docker compose down
    ```
 
 ---

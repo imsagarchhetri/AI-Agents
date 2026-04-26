@@ -1,0 +1,97 @@
+{
+  "processed": 6,
+  "results": [
+    {
+      "ticket_id": "INC-2048",
+      "status": "success",
+      "result": {
+        "ticket_id": "INC-2048",
+        "raw_description": "Cannot connect to office WiFi. Device shows 'Authentication Failed'. Tried rebooting.",
+        "category": "network",
+        "priority": "medium",
+        "kb_context": "---\ntitle: WiFi Authentication Failed Fix\ncategory: network\nsubcategory: wifi_connectivity\ntags: [wifi, 802.1x, radius, reboot]\nversion: 2.1\n---\n## Steps to Resolve\n1. Forget network on device\n2. Clear credential cache (`certutil -delStore` or macOS Keychain)\n3. Reconnect with corporate SSO\n4. If persists, check MAC address in RADIUS deny list",
+        "resolution_plan": "1. Forget network on device.\n2. Clear credential cache (`certutil -delStore` or macOS Keychain).\n3. Reconnect with corporate SSO.\n4. If the issue persists, check MAC address in RADIUS deny list.",
+        "status": "resolved",
+        "error_log": [],
+        "trace_id": "trace-2026-04-26T03:01:07.124639+00:00",
+        "execution_cost_tokens": 0
+      }
+    },
+    {
+      "ticket_id": "INC-2049",
+      "status": "success",
+      "result": {
+        "ticket_id": "INC-2049",
+        "raw_description": "Excel shows 'Product Activation Failed'. Need license renewal or workaround.",
+        "category": "software",
+        "priority": "medium",
+        "kb_context": "---\ntitle: Excel Product Activation Failed Fix\ncategory: software\nsubcategory: license_expiry\ntags: [excel, license, activation, office365]\nversion: 1.0\n---\n## Steps to Resolve\n1. Close all Office applications.\n2. Open the Software Center or self-service portal.\n3. Click \"Renew Office 365 License\" to force a sync.\n4. Re-open Excel and sign in with the corporate email if prompted.\n5. If the issue persists, contact the procurement team for a license review.\n",
+        "resolution_plan": "1. Close all Office applications.\n2. Open the Software Center or self-service portal.\n3. Click \"Renew Office 365 License\" to force a sync.\n4. Re-open Excel and sign in with the corporate email if prompted.\n5. If the issue persists, contact the procurement team for a license review.",
+        "status": "resolved",
+        "error_log": [],
+        "trace_id": "trace-2026-04-26T03:01:09.267846+00:00",
+        "execution_cost_tokens": 0
+      }
+    },
+    {
+      "ticket_id": "INC-2050",
+      "status": "success",
+      "result": {
+        "ticket_id": "INC-2050",
+        "raw_description": "Printer 3F-B2 shows 'PC Load Letter'. Jammed paper tray A.",
+        "category": "hardware",
+        "priority": "medium",
+        "kb_context": "---\ntitle: Printer Jam / PC Load Letter Fix\ncategory: hardware\nsubcategory: printer_error\ntags: [printer, jam, paper, load letter]\nversion: 1.2\n---\n## Steps to Resolve\n1. Open the main paper tray and remove any crumpled or stuck paper.\n2. Check the rear access door and gently pull out any jammed paper.\n3. Reload the tray with fresh standard A4 paper.\n4. Press the \"Resume\" or \"OK\" button on the printer console to clear the error.\n5. If the error remains, try power cycling the printer.\n",
+        "resolution_plan": "1. Open the main paper tray and remove any crumpled or stuck paper.\n2. Check the rear access door and gently pull out any jammed paper.\n3. Reload the tray with fresh standard A4 paper.\n4. Press the \"Resume\" or \"OK\" button on the printer console to clear the error.\n5. If the error remains, try power cycling the printer.",
+        "status": "resolved",
+        "error_log": [],
+        "trace_id": "trace-2026-04-26T03:01:11.426168+00:00",
+        "execution_cost_tokens": 0
+      }
+    },
+    {
+      "ticket_id": "INC-2051",
+      "status": "success",
+      "result": {
+        "ticket_id": "INC-2051",
+        "raw_description": "My laptop screen is completely broken and shattered.",
+        "category": "unknown",
+        "priority": "medium",
+        "status": "processing",
+        "error_log": [],
+        "trace_id": "trace-2026-04-26T03:01:13.456298+00:00",
+        "execution_cost_tokens": 0
+      }
+    },
+    {
+      "ticket_id": "INC-2052",
+      "status": "success",
+      "result": {
+        "ticket_id": "INC-2052",
+        "raw_description": "I forgot my VPN password and need a reset.",
+        "category": "network",
+        "priority": "medium",
+        "hitl_approval": null,
+        "status": "needs_approval",
+        "error_log": [],
+        "trace_id": "trace-2026-04-26T03:01:14.363218+00:00",
+        "execution_cost_tokens": 0
+      }
+    },
+    {
+      "ticket_id": "INC-2053",
+      "status": "success",
+      "result": {
+        "ticket_id": "INC-2053",
+        "raw_description": "The file server is running slow and timing out.",
+        "category": "unknown",
+        "priority": "low",
+        "diagnostic_result": "DIAG_RESULT: ping internal-dns && ipconfig /flushdns executed successfully. Output: 200 OK",
+        "status": "resolved",
+        "error_log": [],
+        "trace_id": "trace-2026-04-26T03:01:15.561609+00:00",
+        "execution_cost_tokens": 0
+      }
+    }
+  ]
+}
