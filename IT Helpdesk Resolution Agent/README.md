@@ -130,6 +130,25 @@ curl -X 'POST' \
 }'
 ```
 
+**Response:**
+```json
+{
+  "status": "success",
+  "result": {
+    "ticket_id": "INC-2048",
+    "raw_description": "Cannot connect to office WiFi. Device shows Authentication Failed. Tried rebooting.",
+    "category": "network",
+    "priority": "medium",
+    "kb_context": "---\ntitle: WiFi Authentication Failed Fix\n...",
+    "resolution_plan": "1. Forget the network on the device.\n2. Clear the credential cache using `certutil -delStore` (for Windows) or through macOS Keychain.\n3. Reconnect to the network using corporate SSO.\n4. If the issue persists, check the MAC address in the RADIUS deny list.",
+    "status": "resolved",
+    "error_log": [],
+    "trace_id": "trace-2026-04-26T...",
+    "execution_cost_tokens": 0
+  }
+}
+```
+
 ### 3. Batch Process Tickets
 Processes an array of mock tickets directly from the `data/it_tickets.json` file. Useful for testing all scenarios at once.
 
