@@ -2,6 +2,7 @@ import os
 from langsmith import Client
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.sdk.trace.export import BatchSpanProcessor, ConsoleSpanExporter
 from opentelemetry.sdk.resources import Resource
 from graph import build_graph
 from config import settings
@@ -12,6 +13,11 @@ resource = Resource.create({
     "service.version": "1.0.0"
 })
 provider = TracerProvider(resource=resource)
+
+# Export traces to console for local debugging
+processor = BatchSpanProcessor(ConsoleSpanExporter())
+provider.add_span_processor(processor)
+
 trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
