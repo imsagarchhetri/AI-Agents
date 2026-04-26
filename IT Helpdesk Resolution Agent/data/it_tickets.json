@@ -1,0 +1,38 @@
+[
+    {
+        "ticket_id": "INC-2048",
+        "category": "network",
+        "subcategory": "wifi_connectivity",
+        "priority": "high",
+        "description": "Cannot connect to office WiFi. Device shows 'Authentication Failed'. Tried rebooting.",
+        "user_email": "jane.doe@company.com",
+        "status": "new",
+        "created_at": "2024-06-10T09:15:00Z",
+        "sla_deadline": "2024-06-10T13:15:00Z",
+        "resolution_notes": ""
+    },
+    {
+        "ticket_id": "INC-2049",
+        "category": "software",
+        "subcategory": "license_expiry",
+        "priority": "medium",
+        "description": "Excel shows 'Product Activation Failed'. Need license renewal or workaround.",
+        "user_email": "mark.smith@company.com",
+        "status": "new",
+        "created_at": "2024-06-10T10:30:00Z",
+        "sla_deadline": "2024-06-11T10:30:00Z",
+        "resolution_notes": ""
+    },
+    {
+        "ticket_id": "INC-2050",
+        "category": "hardware",
+        "subcategory": "printer_error",
+        "priority": "low",
+        "description": "Printer 3F-B2 shows 'PC Load Letter'. Jammed paper tray A.",
+        "user_email": "lisa.wong@company.com",
+        "status": "new",
+        "created_at": "2024-06-10T11:45:00Z",
+        "sla_deadline": "2024-06-12T11:45:00Z",
+        "resolution_notes": ""
+    }
+]
